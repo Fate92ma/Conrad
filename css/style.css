@@ -1,0 +1,620 @@
+/*
+
+Template Name: Conrad
+Template Url: https://fate92ma.github.io/Conrad
+Made With: Mr. Hamza Nabil
+Contact Me: fatema131khaled@gmail.com
+
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: Candara
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img {
+    max-width: 100%
+}
+
+/* First Section */
+
+.conrad {
+    background: url(../img/01.jpg) fixed 0 0/cover;
+    height: 700px;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: white
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+nav {
+    align-self: center
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 14px
+}
+
+.digital {
+    width: 90%;
+    padding-top: 200px
+}
+
+.digital p:first-child {
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+@media (max-width: 800px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center
+    }
+
+    .digital {
+        width: 100%;
+        text-align: center
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul li {
+        padding-bottom: 10px
+    }
+
+    .digital p:first-child {
+        font-size: 2.4em
+    }
+}
+
+/* Second Section */
+
+.about {
+    padding: 100px 0
+}
+
+.cont1 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+
+.creative {
+    align-self: center
+}
+
+.creative h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 5%
+}
+
+.creative p:nth-of-type(1) {
+    color: #444
+}
+
+.creative p:nth-of-type(1) span {
+    font-weight: bold
+}
+
+.creative p:nth-of-type(2) {
+    color: #888;
+    margin: 30px 0px
+}
+
+.creative p:nth-of-type(3) a {
+    text-decoration: none;
+    color: #000
+}
+
+.awesome {
+    margin: 0 30px
+}
+
+.awesome h3,
+.office h3 {
+    margin: 14px 0;
+    color: #666
+}
+
+.awesome p,
+.office p {
+    color: #999;
+    font-size: 14px
+}
+
+.awesome > div,
+.office > div {
+    overflow: hidden;
+    position: relative
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none
+}
+
+.awesome img,
+.office img {
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.awesome > div:hover img,
+.office > div:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.awesome > div:hover .overlay,
+.office > div:hover .overlay {
+    display: block
+}
+
+@media (max-width: 1150px) {
+    .cont1 {
+        width: 96%
+    }
+}
+
+@media (max-width: 900px) {
+    .cont1 {
+        text-align: center;
+        flex-direction: column
+    }
+
+    .awesome {
+        margin: 30px 0
+    }
+
+    .creative h2 {
+        margin-bottom: 2%
+    }
+
+    .creative p:nth-of-type(2) {
+        margin: 20px 0
+    }
+}
+
+/* Third Section */
+
+.folio {
+    background: url(../img/04.jpg) fixed 0 0/cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.folio-part {
+    width: 100%;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.folio-part h4,
+.folio-part span {
+    font-weight: normal
+}
+
+.folio-part p {
+    margin: 24px 0
+}
+
+.folio-part span {
+    font-style: italic;
+    font-size: 14px
+}
+
+.p2 {
+    display: none
+}
+
+.folio-part button {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-top: 15px;
+    outline: 0
+}
+
+.folio-part button:hover {
+    background: #000
+}
+
+/* Fourth Section */
+
+.solution {
+    padding: 100px 0
+}
+
+.cont2 {
+    width: 90%;
+    margin: auto;
+    display: flex
+}
+
+.tailor,
+.acordion {
+    flex: 1;
+    margin: 0 10px
+}
+
+.acordion {
+    align-self: center
+}
+
+.tailor h2 {
+    font-size: 2.5em
+}
+
+.tailor p:nth-of-type(1) {
+    margin: 20px 0;
+    color: #555;
+    font-size: 20px
+}
+
+.tailor p:nth-of-type(2) {
+    font-size: 15px;
+    color: #999;
+    line-height: 1.5
+}
+
+.tailor p:nth-of-type(3) a {
+    display: block;
+    margin: 20px 0;
+    color: #555;
+    text-decoration: none
+}
+
+.acordion h3 {
+    background: #444;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid white
+}
+
+.acordion p {
+    color: #555;
+    padding: 10px;
+    background: #ddd;
+    display: none
+}
+
+@media (max-width: 1150px) {
+    .cont2 {
+        width: 96%
+    }
+}
+
+@media (max-width: 900px) {
+    .cont2 {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .tailor,
+    .acordion {
+        margin: 0 10px
+    }
+}
+
+/* Fifth Section */
+
+.study {
+    height: 500px;
+    color: white;
+    width: 100%;
+    display: flex;
+    background: #e62739
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0 20px
+}
+
+.app,
+.download {
+    flex: 1
+}
+
+.download {
+    background: url(../img/05.jpg) center/cover;
+    height: 500px;
+}
+
+.app p:nth-of-type(1) {
+    margin: 20px 0;
+    font-size: 16px
+}
+
+.app p:nth-of-type(3) a {
+    margin: 20px 0;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.num {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+    width: 25%
+}
+
+.timer {
+    margin: 10px 0;
+    font-size: 2.5em
+}
+
+@media (max-width: 650px) {
+    .study {
+        text-align: center;
+        flex-direction: column-reverse
+    }
+
+    .app {
+        padding: 20px
+    }
+}
+
+/* Sixth Section */
+
+#portfolios {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#portfolios h2 {
+    font-size: 3em
+}
+
+#filters li {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#filters li span {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.active {
+    color: red;
+}
+
+#portfoliolist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfoliolist .portfolio {
+    width: 31%;
+    margin: 1%;
+    display: none;
+}
+
+.portfolio-wrapper {
+    position: relative !important;
+}
+
+.portfolio img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+}
+
+@media (max-width: 800px) {
+    #portfoliolist .portfolio {
+        width: 96%;
+    }
+}
+
+@media (max-width: 400px) {
+    #portfolios h2 {
+        font-size: 2.1em;
+    }
+}
+
+/* Seventh Section */
+
+.clients {
+    padding: 40px 0;
+    background: #9068be;
+    color: #fff
+}
+
+.cont3 {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+
+.client p {
+    font-size: 18px
+}
+
+.client span {
+    opacity: 0.5;
+    font-size: 12px
+}
+
+.client span:nth-of-type(1) {
+    margin-bottom: 12px;
+    display: block
+}
+
+@media (max-width: 1000px) {
+    .cont3 {
+        width: 92%
+    }
+}
+
+@media (max-width: 800px) {
+    .cont3 {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .client p {
+        margin-top: 12px
+    }
+}
+
+/* Eighth Section */
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 0
+}
+
+.cont4 {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 75%
+}
+
+.conrad1 a {
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    color: #888
+}
+
+.conrad1 p {
+    margin-top: 10px;
+    color: #888
+}
+
+.conrad1 input {
+    display: block;
+    background: none;
+    outline: 0;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 2%;
+    border: 1px solid #888
+}
+
+.conrad1 input[type=email] {
+    margin: 10px 0
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #000
+}
+
+.footer i,
+.footer span,
+.footer a {
+    text-decoration: none;
+    color: #fff
+}
+
+@media (max-width: 1000px) {
+    .cont4 {
+        width: 92%
+    }
+}
+
+@media (max-width: 800px) {
+    .cont4 {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .conrad1 {
+        margin: 20px 0
+    }
+
+    .conrad1 input,
+    .conrad1 input[type=email] {
+        display: block;
+        margin: 4px auto
+    }
+}
+
+@media (max-width: 350px) {
+    .footer {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .footer a {
+        display: block;
+        margin: 10px 0
+    }
+}
