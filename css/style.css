@@ -17,7 +17,10 @@ Contact Me: fatema131khaled@gmail.com
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
-    font-family: Candara
+}
+
+body {
+    font-family: 'Candara'
 }
 
 .container {
@@ -30,11 +33,11 @@ img {
     max-width: 100%
 }
 
-/* First Section */
+/* Start First Section */
 
 .conrad {
     background: url(../img/01.jpg) fixed 0 0/cover;
-    height: 700px;
+    height: 100vh;
     color: white;
 }
 
@@ -74,7 +77,7 @@ nav ul li {
     letter-spacing: 2px
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     header {
         justify-content: center;
         flex-direction: column;
@@ -87,7 +90,7 @@ nav ul li {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     nav ul li {
         padding-bottom: 10px
     }
@@ -97,7 +100,9 @@ nav ul li {
     }
 }
 
-/* Second Section */
+/* End First Section */
+
+/* Start Second Section */
 
 .about {
     padding: 100px 0
@@ -194,13 +199,13 @@ nav ul li {
     display: block
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
     .cont1 {
         width: 96%
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .cont1 {
         text-align: center;
         flex-direction: column
@@ -219,7 +224,9 @@ nav ul li {
     }
 }
 
-/* Third Section */
+/* End Second Section */
+
+/* Start Third Section */
 
 .folio {
     background: url(../img/04.jpg) fixed 0 0/cover;
@@ -243,16 +250,12 @@ nav ul li {
     transform: translate(-50%, -50%)
 }
 
-.folio-part h4,
-.folio-part span {
-    font-weight: normal
-}
-
 .folio-part p {
     margin: 24px 0
 }
 
 .folio-part span {
+    display: block;
     font-style: italic;
     font-size: 14px
 }
@@ -281,7 +284,9 @@ nav ul li {
     background: #000
 }
 
-/* Fourth Section */
+/* End Third Section */
+
+/* Start Fourth Section */
 
 .solution {
     padding: 100px 0
@@ -341,13 +346,13 @@ nav ul li {
     display: none
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
     .cont2 {
         width: 96%
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .cont2 {
         flex-direction: column;
         text-align: center
@@ -359,7 +364,9 @@ nav ul li {
     }
 }
 
-/* Fifth Section */
+/* End Fourth Section */
+
+/* Start Fifth Section */
 
 .study {
     height: 500px;
@@ -411,8 +418,9 @@ nav ul li {
     font-size: 2.5em
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .study {
+        height: fit-content;
         text-align: center;
         flex-direction: column-reverse
     }
@@ -422,7 +430,9 @@ nav ul li {
     }
 }
 
-/* Sixth Section */
+/* End Fifth Section */
+
+/* Start Sixth Section */
 
 #portfolios {
     padding: 100px 0;
@@ -471,19 +481,21 @@ nav ul li {
     top: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #portfoliolist .portfolio {
         width: 96%;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     #portfolios h2 {
         font-size: 2.1em;
     }
 }
 
-/* Seventh Section */
+/* End Sixth Section */
+
+/* Start Seventh Section */
 
 .clients {
     padding: 40px 0;
@@ -512,13 +524,13 @@ nav ul li {
     display: block
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .cont3 {
         width: 92%
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .cont3 {
         flex-direction: column;
         text-align: center
@@ -529,7 +541,9 @@ nav ul li {
     }
 }
 
-/* Eighth Section */
+/* End Seventh Section */
+
+/* Start Eighth Section */
 
 footer {
     background: #222;
@@ -584,13 +598,13 @@ footer {
     color: #fff
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .cont4 {
         width: 92%
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .cont4 {
         flex-direction: column;
         text-align: center
@@ -607,7 +621,7 @@ footer {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 480px) {
     .footer {
         flex-direction: column;
         text-align: center
@@ -618,3 +632,5 @@ footer {
         margin: 10px 0
     }
 }
+
+/* End Eighth Section */

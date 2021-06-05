@@ -1,5 +1,5 @@
 $(document).ready(function () { // Start Coding Here
-    
+
     // Author
 
     $(".btn1").click(function () {
@@ -26,9 +26,9 @@ $(document).ready(function () { // Start Coding Here
     $(window).scroll(function () {
         var Count = $(this).scrollTop();
 
-            $('.timer').countTo({
-                onUpdate: true
-            });
+        $('.timer').countTo({
+            onUpdate: true
+        });
     });
 
     // Mix
@@ -53,7 +53,7 @@ $(document).ready(function () { // Start Coding Here
     $(".right3 a").click(function () {
         $("body", "html").animate({
             scrollTop: 0
-        }, 1200)
+        }, 1000)
     });
 
 }); // End Code
